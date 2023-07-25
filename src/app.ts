@@ -8,4 +8,8 @@ app.get('/', async (request:Request, response:Response) => {
 	return response.json({message: 'You have reached home route'})
 })
 
+app.get('/branch', async (request, response) => {
+	return response.json({message: 'You are on branch route'})
+})
+
 export default app
