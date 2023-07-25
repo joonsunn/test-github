@@ -5,7 +5,7 @@ const app = express()
 app.use(express.json())
 
 app.get('/', async (request:Request, response:Response) => {
-	return response.json({message: 'You have reached home'})
+	return response.json({message: 'You have reached home route'})
 })
 
 export default app
