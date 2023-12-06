@@ -1,15 +1,19 @@
-import express, {Request, Response} from 'express'
+import express, { Request, Response } from "express";
 
-const app = express()
+const app = express();
 
-app.use(express.json())
+app.use(express.json());
 
-app.get('/', async (request:Request, response:Response) => {
-	return response.json({message: 'You have reached home route'})
-})
+app.get("/", async (request: Request, response: Response) => {
+    return response.json({ message: "You have reached home route" });
+});
 
-app.get('/branch', async (request, response) => {
-	return response.json({message: 'You are on branch route'})
-})
+app.get("/branch", async (request, response) => {
+    return response.json({ message: "You are on branch route" });
+});
 
-export default app
+app.get("/developV2", async (request, response) => {
+    return response.json({ message: "You are on develop V2 route" });
+});
+
+export default app;
