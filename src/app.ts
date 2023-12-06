@@ -1,4 +1,4 @@
-import express, { Request, Response, request } from "express";
+import express, { Request, Response } from "express";
 
 const app = express();
 
@@ -12,8 +12,8 @@ app.get("/branch", async (request, response) => {
     return response.json({ message: "You are on branch route" });
 });
 
-app.get("/develop", async (request, response) => {
-    return response.json({ message: "You are on develop route." });
+app.get("/developV2", async (request, response) => {
+    return response.json({ message: "You are on develop V2 route" });
 });
 
 export default app;
