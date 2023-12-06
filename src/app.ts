@@ -13,7 +13,7 @@ app.get("/branch", async (request, response) => {
 });
 
 app.get("/develop", async (request, response) => {
-    return response.json({ message: "You are on develop route" });
+    return response.json({ message: "You are on develop route." });
 });
 
 export default app;
