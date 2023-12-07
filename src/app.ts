@@ -20,4 +20,8 @@ app.get("/developV3", async (request, response) => {
     return response.json({ message: "You are on develop V3 route" });
 });
 
+app.get("/another-new-route", async (request, response) => {
+    return response.json({ message: "You are on another new route" });
+});
+
 export default app;
