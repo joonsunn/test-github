@@ -24,4 +24,8 @@ app.get("/another-route", async (request, response) => {
     return response.json({ message: "Another route" });
 });
 
+app.get("/another-new-route", async (request, response) => {
+    return response.json({ message: "You are on another new route" });
+});
+
 export default app;
